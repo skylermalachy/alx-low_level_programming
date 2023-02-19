@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - prints hexadecimal base 0123456789abcdef, using putchar
+ * main - prints all the numbers of base 16 in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int n = '0';
-int a _to_ f = 'a';
-while (n <= '9') /print 0-9 /
+int n;
+char ch;
+for (n = 48; n < 58; n++)
 {
 putchar(n);
-n++;
 }
-while (a _to_ f <= 'f') /print a-f to finish hexbase /
+for (ch = 'a'; ch <= 'f'; ch++)
 {
-putchar(a _to_ f);
-a _to_ f++;
+putchar(ch);
 }
 putchar('\n');
 return (0);
 }
+
